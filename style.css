@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navBar {
+  background-color: #1C6DD0;
+}
+
+nav {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  padding: 20px;
+}
+
+nav h1 {
+  font-family: 'zrnic-rg';
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  width: 4em;
+  cursor: pointer;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: bold;
+  text-decoration: underline;
+}
+
+.sectionMain {
+  display: -ms-grid;
+  display: grid;
+  min-height: 40vh;
+  -ms-grid-columns: 10% (1fr)[3] 10%;
+      grid-template-columns: 10% repeat(3, 1fr) 10%;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(white), to(skyblue));
+  background-image: linear-gradient(to bottom right, white, skyblue);
+}
+
+.sectionMain .ps4Logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  width: 45%;
+}
+
+.sectionMain .ps4Image {
+  height: auto;
+  width: 135%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+.sectionMain h3 {
+  font-family: 'Monsterrat', sans-serif, Helvetica;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  font-size: 18pt;
+}
+
+.secondarySection {
+  padding: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.secondarySection .description {
+  padding: 10px 25px;
+  height: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secondarySection .description p {
+  font-family: 'Monsterrat', Helvetica, sans-serif;
+  font-size: 16pt;
+  margin-bottom: 20px;
+}
+
+.secondarySection .ps4secondaryImage {
+  width: 60%;
+}
+
+.secondarySection .featureList {
+  display: inline-block;
+  padding: 20px;
+  height: 80%;
+}
+
+.secondarySection .featureList li {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid darkblue;
+  border-radius: 8px;
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
